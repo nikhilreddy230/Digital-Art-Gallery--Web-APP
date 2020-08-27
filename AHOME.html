@@ -1,0 +1,57 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+.mySlides {
+  display: block;
+    }
+
+body{
+text-decoration:none;
+}
+a{color:white;text-decoration:none;}
+</style>
+</head>
+<body>
+<div align="center" style="background-color: #B22222">
+<center><img src="logos.png" height=80 width=400/ ></center>
+<h3 style="text-align:right"><a href="AHOME1.html" >signout</a> 
+</h3>
+<center><h2 style="color:black;background-color: #AABBCA"><i>latest arts</i></h2></center></div>
+<div class="w3-content w3-section"  align="center" style="background-color: #AABBCA">
+ <a href="homeimg.html" > <img class="mySlides" src="homeimg.jpg"  height=450px  width=1000/></a>
+  <a href="homeimg1.html"><img class="mySlides" src="homeimg1.jpg"  height=450px  width=1000/></a>
+  <a href="homeimg2.html"><img class="mySlides" src="homeimg2.jpg"  height=450px  width=1000/></a>
+  <a href="homeimg10.html"><img class="mySlides" src="homeimg10.jpg"  height=450px  width=1000/></a>
+    <a href="homeimg11.html"><img class="mySlides" src="homeimg11.jpg"  height=450px  width=1000/></a>
+
+</div></div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+<div align="center" style="background-color: lightblue">
+<center><h4 style="color:white;background-color: 008080">View By Catogories</h4></center>
+
+<a href="nature.html"><img src="homeimg4.jpg" height=250 width=300/></a>
+<a href="indarts.html"><img src="homeimg5p.jpg" height=250 width=300/></a>
+<a href="animals.html"><img src="homeimg6p.jpg" height=250 width=300/></a><br> <br><br>
+<a href="sports.html"><img src="homeimg7p.jpg" height=250 width=300/></a>
+<a href="travel.html"><img src="homeimg8.jpg" height=250 width=300/></a>
+<a href="history.html"><img src="homeimg9.jpg" height=250 width=300/></a>
+</div>
+
+</body>
+</html>
